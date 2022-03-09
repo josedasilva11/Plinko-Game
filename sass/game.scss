@@ -1,0 +1,72 @@
+//---- GLOBAL COLORS -----------------------------
+
+$c_brand: #f0b90b;
+
+$c_green: #03A007;
+$c_yellow: #FF9502;
+$c_red: #D33B3B;
+
+//---- LIGHT MODE --------------------------------
+
+// Background colours
+$c_bg_1: #FAFAFA;
+$c_bg_2: #FAFAFA;
+
+// UI colours
+$c_text: #1E2329;
+$c_ui_bg_1: rgba(27, 27, 27, 0.9);
+$c_ui_bg_2: #FFF;
+$c_ui_text: rgba(255, 255, 255, 0.9);
+$c_ui_text_hover: rgba(255, 255, 255, 1);
+$c_ui_border: rgba(0, 0, 0, 0.2);
+
+// Button colours
+$c_btn_text: $c_text;
+$c_btn_primary: $c_brand;
+$c_btn_secondary: #EAECEF;
+
+//---- DARK MODE ---------------------------------
+
+// Background colours
+$cd_bg_1: #0B0E11;
+$cd_bg_2: #0B0E11;
+
+// UI colours
+$cd_ui_bg_1: rgb(11, 14, 17);
+$cd_ui_bg_2: rgba(#181A20, 1);
+$cd_ui_text: #EAECEF;
+$cd_ui_text_hover: rgba(255, 255, 255, 1);
+
+// Button colours
+$cd_btn_text: #1E2329;
+$cd_btn_primary: $c_brand;
+$cd_btn_secondary: #474D57;
+
+//---- MIXINS --------------------------------
+
+@mixin fade-in-ellipsis($box-width, $right-width, $bg-color) {
+    position: relative;
+    max-width: calc(100% - #{$right-width});
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -$right-width;
+      height: 100%;
+      width: 30px;
+      background-image : -webkit-linear-gradient(to right, rgba($bg-color, 0), $bg-color);
+      background-image : linear-gradient(to right, rgba($bg-color, 0), $bg-color);
+    }
+}
+
+//---- PARTIALS --------------------------------
+
+@import 'partials/loading';
+@import 'partials/base';
+@import 'partials/appbar';
+@import 'partials/buttons';
+@import 'partials/form';
+@import 'partials/modal';
+@import 'partials/sidebar';
+@import 'partials/plinko';
+@import 'partials/theme';

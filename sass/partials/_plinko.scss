@@ -1,0 +1,74 @@
+#g-frame-game {
+    padding: 0;
+    position: relative;
+}
+
+#game canvas {
+    background: transparent !important;
+    height: 100% !important;
+    width: auto !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#win-zone {
+    position: absolute;
+    bottom: 0;
+}
+
+.win-zone-row {
+    box-sizing: border-box;
+}
+
+.win-zone-container {
+    position: relative;
+    width: 5%;
+}
+
+.win-zone-value {
+    float: left;
+    font-size: 80%;
+}
+
+@keyframes hit-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#g-ui-canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+#g-bet-pins,
+#g-bet-type {
+    flex: 0;
+    gap: 10px;
+    width: auto;
+}
+
+#g-bet-pins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#g-bet-pins label {
+    text-align: center;
+}
+
+#g-bet-pins .g-row {
+    gap: 10px;
+}

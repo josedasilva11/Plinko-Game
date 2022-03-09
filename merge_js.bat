@@ -1,0 +1,1 @@
+uglifyjs --compress --mangle --output js/game.js -- js/components/gHelper.js js/components/gIcon.js js/components/gUI.js js/components/game.js

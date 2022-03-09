@@ -1,0 +1,37 @@
+{
+    "game": { 
+        "name": "Plinko"
+    },
+    "generic": {
+        "bet_amount": "Bet Amount",
+        "bet_start": "Make Bet",
+        "bet_end": "Stop Betting",
+        "auto": "Auto",
+        "manual": "Manual",
+        "start": "Start",
+        "okay": "Okay",
+        "cancel": "Cancel",
+        "sound": "Sound",
+        "score": "Score",
+        "leaderboard": "Leaderboard",
+        "green": "Green",
+        "red": "Red",
+        "loading": "Loading",
+        "yellow": "Yellow",
+        "random": "Random"
+    },
+    "form": {
+        "user_id": "BSC wallet",
+        "number_of_pins": "Number of Pins"
+    },
+    "modal": {
+        "login": { 
+            "title": "Welcome to Plinko!", 
+            "content": "<p>Put in your BSC wallet address if you want to be eligible to win the weekly prize.</p><p>The person with the highest amount of money will win!</p>" 
+        },
+        "how_to_play": {
+            "title": "How to Play",
+            "content": "<p>Each disc lands on related color box.</p><p>Your win is bet multiplied by coefficient in the box.</p><p class='text-align: center'><img src='img/plinko.png'></p>"
+        }
+    }
+}

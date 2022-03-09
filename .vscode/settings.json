@@ -1,0 +1,16 @@
+{
+    "liveSassCompile.settings.formats":[
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/css/"
+		}
+	],
+    "files.exclude": {
+        ".vscode": true,
+        "css": true,
+        "js/game.js": true,
+        "jsconfig.json": true,
+        "merge_js.bat": true
+    }
+}

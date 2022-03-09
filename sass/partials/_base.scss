@@ -1,0 +1,250 @@
+#game {
+    max-width: 940px;
+    min-height: 560px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 7px;
+    overflow: hidden;
+    color: $c_text;
+    position: relative;
+}
+
+#game div {
+    //border: solid 1px red;
+    box-sizing: border-box;
+}
+
+#game .disabled {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+#game p {
+    margin: 0;
+    padding: 0;
+}
+
+#game,
+#game button,
+#game input {
+    font-size: 1.5vw;
+}
+
+#game svg {
+    fill: $c_text;
+    opacity: .9;
+}
+
+#game svg:hover {
+    opacity: 1;
+}
+
+#g-background {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+#g-background svg {
+    opacity: 1;
+}
+
+#g-game-container {
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+}
+
+#g-frame-game {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#g-frame-bet {
+    flex: .6 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+}
+
+.g-bet-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.g-bet-container > div {
+    width: 100%;
+}
+
+.g-bet-container .g-field-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#g-bet-top {
+    flex-direction: column;
+    gap: 10px;
+}
+
+#g-bet-bottom {
+    gap: 10px;
+}
+
+#g-bet-form {
+    gap: 10px;
+}
+
+#g-bet-amount {
+    gap: 10px;
+}
+
+#g-bet-amount-input {
+    width: 70px;
+    box-sizing: border-box;
+    padding: 6px;
+}
+
+#g-bet-shortcuts {
+    flex-wrap: wrap;
+}
+
+#g-bet-shortcuts .g-col {
+    flex: 50%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#g-bet-shortcuts button {
+    width: 100%;
+}
+
+.g-row {
+    flex: 1;
+    display: flex;
+}
+
+.g-col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.g-frame {
+    z-index: 1;
+}
+
+#game .game-fade-in {
+    animation-name: game-fade-in;
+    animation-duration: .3s;
+}
+
+#game .game-fade-out {
+    animation-name: game-fade-out;
+    animation-duration: .3s;
+}
+
+@keyframes game-fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes game-fade-out {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    #game,
+    #game button,
+    #game input {
+       font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #game,
+    #game button,
+    #game input {
+       font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+
+    #g-modal {
+        width: 90% !important;
+    }
+
+    .g-row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .g-col {
+        max-width: 100% !important;
+        flex: 1 1 auto;
+    }
+
+    #g-frame-bet {
+        flex: .2 !important;
+        flex-direction: row;
+    }
+
+    #g-bet-amount,
+    #g-bet-shortcuts {
+        flex-direction: row;
+    }
+
+    #g-bet-shortcuts .g-col {
+        flex: auto;
+    }
+
+    #g-bet-pins .g-row {
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+    }
+
+    #g-frame-bet {
+        flex-direction: column;
+        gap: 5px;
+        flex: .01 !important;
+    }
+
+    #g-bet-top {
+        flex-direction: row;
+    }
+
+    #g-bet-top > div {
+        flex: 1;
+        width: 100%;
+    }
+
+    #g-bet-options {
+        display: none;
+    }
+
+}

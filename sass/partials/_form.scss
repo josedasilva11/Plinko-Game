@@ -1,0 +1,237 @@
+#game label {
+    opacity: .7;
+}
+
+/* Chrome, Safari, Edge, Opera */
+#game input::-webkit-outer-spin-button,
+#game input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+#game input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Toggle Switch */
+
+.switch {
+    display: flex;
+    height: 20px;
+}
+
+.toggle-control {
+    position: relative;
+}
+
+.toggle-control input {
+    appearance: none;
+    outline: none;
+    opacity: 0;
+}
+
+.toggle-control .control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 40px;
+    border-radius: 25px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.toggle-control .control:after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    right: 4px;
+    top: 2px;
+    border-radius: 25px;
+    background-color: $c_text;
+    transition: right 0.15s ease-in;
+}
+
+.toggle-control input:checked~.control {
+    background-color: $c_btn_primary;
+}
+
+.toggle-control input:checked~.control:after {
+    right: 20px;
+}
+
+/* The container */
+
+.container-checkbox {
+    display: inline-block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 0px !important;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 16px !important;
+    left: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.container-checkbox .checkmark {
+    position: absolute;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox:hover input~.checkmark {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox input:checked~.checkmark {
+    background-color: $c_brand;
+}
+
+.container-checkbox.bet-green-check input:checked~.checkmark {
+    background-color: #03A007;
+}
+
+.container-checkbox.bet-yellow-check input:checked~.checkmark {
+    background-color: #FF9502;
+}
+
+.container-checkbox.bet-red-check input:checked~.checkmark {
+    background-color: #D33B3B;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container-checkbox input:checked~.checkmark:after {
+    display: inline-block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container-checkbox .checkmark:after {
+    left: 4px;
+    top: -1px;
+    width: 5px;
+    height: 11px;
+    border: solid $c_text;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* The container */
+
+.container-radio {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 0px !important;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.container-radio .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container-radio:hover input~.checkmark {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container-radio input:checked~.checkmark {
+    background-color: $c_brand;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.container-radio .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container-radio input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container-radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $c_text;
+}
