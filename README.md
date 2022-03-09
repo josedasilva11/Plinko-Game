@@ -1,18 +1,5 @@
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <h3 align="center">Plinko</h3>
-
-  <p align="center">
-    Plinko Casino Game
-    <br />
-    <a href="https://github.com/MickeyUK/plinko/releases">Latest Release</a>
-    ·
-    <a href="https://github.com/MickeyUK/plinko/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/MickeyUK/plinko/issues">Request Feature</a>
-  </p>
-</p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
@@ -24,10 +11,6 @@
     <li><a href="#embedding-the-game">Embedding the Game</a></li>
     <li><a href="#configuration">Configuration</a></li>
     <li><a href="#server-side-verification">Server Side Verification</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -112,25 +95,3 @@ When sending new transaction information, the game will send this data in JSON f
 |transactions|array|A list of all transactions made during play.
 |token|mixed|The CSRF token specified in the configuation file.
 
-## Roadmap
-
-See the [open issues](https://github.com/MickeyUK/plinko/issues) for a list of proposed features (and known issues).
-
-
-## License
-
-See `LICENSE.txt` for more information.
-
-
-
-## Contact
-
-
-Project Link: [https://github.com/MickeyUK/plinko](https://github.com/eli0090/hostfully-sync)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* [MickeyUK] - [GitHub](https://github.com/MickeyUK)
