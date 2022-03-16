@@ -367,25 +367,26 @@ gUI.ManualButtons = function () {
     gUI.betAuto.classList.add('g-btn-secondary');
 
     // Bet Green
-    var greenBet = gUI.BtnPrimary('Green', () => {
+    var greenBet = gUI.BtnPrimary('Bet', () => {
         game.StartManual(0);
     });
     greenBet.classList.add('green');
     gUI.betBottom.appendChild(greenBet);
 
+    /*
     // Bet Yellow
     var yellowBet = gUI.BtnPrimary('Yellow', () => {
         game.StartManual(1);
     });
     yellowBet.classList.add('yellow');
     gUI.betBottom.appendChild(yellowBet);
-
     // Bet Red
     var redBet = gUI.BtnPrimary('Red', () => {
         game.StartManual(2);
     });
     redBet.classList.add('red');
     gUI.betBottom.appendChild(redBet);
+    */
 
 }
 
