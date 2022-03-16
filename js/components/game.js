@@ -615,7 +615,7 @@ game.SetupBoard = function (n) {
     var xspace = (game.width / n) / 1.1;
     var yspace = (game.height / n) / 1.1;
     var x = game.cx - xspace;
-    var y = game.height / 24;
+    var y = game.height / 12;
 
     // Pin loop
     var i, j;
@@ -740,7 +740,7 @@ game.DrawUI = function () {
 
     // Draw win zones
     var multi = 0;
-    for (var i = 0; i < 3; i++) {
+    for (var i = 0; i < 1; i++) {
         for (var j = 0; j < game.pinCount-1; j++) {
 
             // Zone object
@@ -1066,7 +1066,7 @@ game.StartAuto = function () {
             game.MakeBet();
             gUI.betBottom.classList.remove('disabled');
             //var x = gHelper.RandomRange(game.cx - (2/game.pinCount), game.cx + (2/game.pinCount));
-            game.CreateBall(Math.round(gHelper.RandomRange(0, 2)));
+            game.CreateBall(0);
         }
 
     }, 2000);
